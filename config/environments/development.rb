@@ -33,6 +33,7 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.secret_key = 'd6d854b9610334646eaf79e931fb57daa55f138461cc8854bffca622156b2cebea9e7476418707fefd574abded2bc3b420032b5a3b83bfe73f787b236750f837'
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
