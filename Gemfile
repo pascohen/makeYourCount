@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.8'
 
 group :test, :integration, :production do
-	gem 'mysql2'
+	gem 'pg'
+	gem 'rails_12factor'
 end
 
 group :development do
