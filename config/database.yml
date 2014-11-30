@@ -18,18 +18,15 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: postgresql
-  database: make_your_count_test
   pool: 5
   timeout: 5000
 
 integration:
-  adapter: mysql2
-  database: make_your_count_int
+  adapter: postgresql
   pool: 5
   timeout: 5000
 
 production:
-  adapter: mysql2
-  database: make_your_count_prod
+  adapter: postgresql
   pool: 5
   timeout: 5000
