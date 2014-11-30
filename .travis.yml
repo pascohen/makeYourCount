@@ -3,14 +3,5 @@ deploy:
   api_key:
     secure: cPK/R3a1FJGYuwERmK9f2LyJJ9aIJggKGPuyPTRMGco5fG85FVXzhtvrvjcjJmcDbeqxV4l4HpnMXg923xF0zANmjFsReWCCF4eJbJ/X+lbNIJ31Q+xmqaonuf4ADtbVDyaG86RRZsYvMGtqZrH120MiYCnomBkPgfsNiRotcm0=
   app: makeYourCount
-  env:
-  - DB=postgresql
-  before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y libtag1-dev
-  before_script:
-  - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - bundle exec rake db:create db:migrate
   on:
     repo: anthonyroux/makeYourCount
