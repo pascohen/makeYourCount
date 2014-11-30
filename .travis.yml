@@ -10,6 +10,6 @@ deploy:
   - sudo apt-get install -y libtag1-dev
   before_script:
   - psql -c 'create database travis_ci_test;' -U postgres
-  - "bundle exec rake db:migrate"
+  - "bundle exec rake db:create db:migrate"
   on:
     repo: anthonyroux/makeYourCount
