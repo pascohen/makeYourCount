@@ -3,8 +3,8 @@ deploy:
   api_key:
     secure: cPK/R3a1FJGYuwERmK9f2LyJJ9aIJggKGPuyPTRMGco5fG85FVXzhtvrvjcjJmcDbeqxV4l4HpnMXg923xF0zANmjFsReWCCF4eJbJ/X+lbNIJ31Q+xmqaonuf4ADtbVDyaG86RRZsYvMGtqZrH120MiYCnomBkPgfsNiRotcm0=
   app: makeYourCount
-  before_script:
-  - "psql -c 'create database myapp_test;' -U postgres"
-  - "rake db:migrate"
   on:
     repo: anthonyroux/makeYourCount
+ before_script:
+  - "psql -c 'create database myapp_test;' -U postgres"
+  - "rake db:migrate"
