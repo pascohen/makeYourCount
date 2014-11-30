@@ -1,13 +1,7 @@
-language: ruby
-script: 'true'
 deploy:
-  provider:
-    provider: cloudfoundry
-  api: https://api.de.a9s.eu
-  username: anthonyroux
-  password:
-    secure: iDC1YkH77UVQCxuopRo/Q1Ql2eilwgRnHTzErG72N7rksMzLigLX8Y/BcRjElxscRotFAZzESO/ruVlHcTfKiIRzM6Y+EqAOTH5INk/HvdJwZDDz14SniG8+AyfLLEuTfjKecdNYu8hP+IfB9yquKAMgdrGh+blN7xunHbyOAcA=
-  organization: anthonyroux
-  space: test
+  provider: heroku
+  api_key:
+    secure: cPK/R3a1FJGYuwERmK9f2LyJJ9aIJggKGPuyPTRMGco5fG85FVXzhtvrvjcjJmcDbeqxV4l4HpnMXg923xF0zANmjFsReWCCF4eJbJ/X+lbNIJ31Q+xmqaonuf4ADtbVDyaG86RRZsYvMGtqZrH120MiYCnomBkPgfsNiRotcm0=
+  app: makeYourCount
   on:
     repo: anthonyroux/makeYourCount
