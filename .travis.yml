@@ -4,6 +4,8 @@ deploy:
     secure: cPK/R3a1FJGYuwERmK9f2LyJJ9aIJggKGPuyPTRMGco5fG85FVXzhtvrvjcjJmcDbeqxV4l4HpnMXg923xF0zANmjFsReWCCF4eJbJ/X+lbNIJ31Q+xmqaonuf4ADtbVDyaG86RRZsYvMGtqZrH120MiYCnomBkPgfsNiRotcm0=
   app: makeYourCount
   run: "rake db:migrate"
-  env: RAILS_ENV=production
+  env: 
+  - RAILS_ENV=production
+  - DB=postgresql
   on:
     repo: anthonyroux/makeYourCount
